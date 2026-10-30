@@ -12,9 +12,14 @@
 <main id="topo"><p class="prompt"><b>rian@ubuntu</b>:<i>~/docs</i>$ cat apache2.md</p>
 <h1>Servidor Apache2 no Ubuntu</h1>
 <p class="lead">Do primeiro <code>apt update</code> até uma página sua no ar. Cada comando vem com o que ele faz, o que aparece na tela e os atalhos de teclado que um iniciante costuma não conhecer. Todos os prints foram feitos em uma máquina virtual real.</p>
-<div class="meta"><div><span>sistema</span>Ubuntu (VM VirtualBox)</div><div><span>servidor</span>Apache 2.4 (pacote apache2)</div><div><span>ip da vm</span>192.168.15.8</div><div><span>porta</span>80/tcp (HTTP)</div><div><span>raiz web</span>/var/www/html</div><div><span>editor</span>nano 8.7.1</div></div>
+<pre class="env"><i>sistema    </i>Ubuntu (VM VirtualBox)
+<i>servidor   </i>Apache 2.4 (pacote apache2)
+<i>ip da vm   </i>192.168.15.8
+<i>porta      </i>80/tcp (HTTP)
+<i>raiz web   </i>/var/www/html
+<i>editor     </i>nano 8.7.1</pre>
 <div class="boot" id="indice" aria-label="Etapas">
-<a href="#atualizar" style="--i:1"><em>OK</em>Atualizar o sistema</a><a href="#instalar" style="--i:2"><em>OK</em>Instalar o Apache2</a><a href="#status" style="--i:3"><em>OK</em>Verificar o status do serviço</a><a href="#habilitar" style="--i:4"><em>OK</em>Habilitar na inicialização</a><a href="#ip" style="--i:5"><em>OK</em>Descobrir o endereço IP</a><a href="#firewall" style="--i:6"><em>OK</em>Configurar o firewall (UFW)</a><a href="#navegador" style="--i:7"><em>OK</em>Testar no navegador</a><a href="#editar" style="--i:8"><em>OK</em>Editar a página com o nano</a><a href="#resultado" style="--i:9"><em>OK</em>Conferir o resultado</a><a href="#logs" style="--i:10"><em>OK</em>Ler os logs</a><a href="#problemas" style="--i:11"><em>OK</em>Resolver problemas comuns</a><a href="#resumo" style="--i:12"><em>OK</em>Resumo dos comandos</a></div>
+<a href="#atualizar"><em>01</em>Atualizar o sistema</a><a href="#instalar"><em>02</em>Instalar o Apache2</a><a href="#status"><em>03</em>Verificar o status do serviço</a><a href="#habilitar"><em>04</em>Habilitar na inicialização</a><a href="#ip"><em>05</em>Descobrir o endereço IP</a><a href="#firewall"><em>06</em>Configurar o firewall (UFW)</a><a href="#navegador"><em>07</em>Testar no navegador</a><a href="#editar"><em>08</em>Editar a página com o nano</a><a href="#resultado"><em>09</em>Conferir o resultado</a><a href="#logs"><em>10</em>Ler os logs</a><a href="#problemas"><em>11</em>Resolver problemas comuns</a><a href="#resumo"><em>12</em>Resumo dos comandos</a></div>
 
 <div class="tip"><strong>Como ler os comandos</strong><p>O texto <code>rian@ubuntu:~$</code> é o prompt: ele já aparece no terminal, <em>não digite</em>. Digite só o que vem depois e aperte <kbd>Enter</kbd>. O Linux diferencia maiúsculas de minúsculas. Para abrir o terminal no Ubuntu: <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>. Para colar um comando no terminal use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd> (o <kbd>Ctrl</kbd>+<kbd>V</kbd> não funciona ali). Dica extra: <kbd>Tab</kbd> completa nomes e <kbd>↑</kbd> repete o comando anterior.</p></div>
 
@@ -136,5 +141,4 @@ sudo nano /var/www/html/index.html
 sudo tail -n 10 /var/log/apache2/access.log</code><button type="button">copiar</button></div></section>
 
 <footer>Projeto de Redes de Computadores, por Rian Lucas. <a href="https://rian-lucas-portfolio-git-main-rianlucas00-projects.vercel.app/">Voltar ao portfólio</a></footer></main>
-<div id="tmux"><a href="#indice">[docs] 0:apache2* índice</a><span id="cur">introdução</span><span id="pct">0%</span></div>
 <dialog id="lb" aria-label="Imagem ampliada"><img alt=""></dialog><script src="js/main.js"></script></body></html>
